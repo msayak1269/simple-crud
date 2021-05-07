@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-image: linear-gradient(to bottom right,#5DA3FA,#120E43);
+            height: 100vh;
+        }
+        ul{
+            margin-right: 70px;
+        }
+        li{
+            display: inline;
+            margin: 5px;
+        }
+        col{
+            margin: 0px;
+            padding: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .card{
+            border-radius: 20px;
+            box-shadow: 0px 0px 15px -5px slategray;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="p-2 bg-transparent">
+        <div>
+            <div class="text-white text-center">
+                <h2>Home</h2>
+            </div>
+        </div>
+    </div>
+    <div class="mt-2 container">
+        <div class="text-right text-white">
+            <a href="/form" class="btn btn-outline-warning">Form</a>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body" style="text-align: justify;">
+                        <p class="text-right">
+                            Last updated : <span style="font-weight: bold;">{{time}}</span>
+                        </p>
+                        <h3 class="text-left">{{title}}</h3>
+                        <br>
+                        <span id="messege">
+                            {{messege}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <br><br><br><br><br>
+    </div>
+</body>
+
+</html>
